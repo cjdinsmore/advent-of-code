@@ -11,11 +11,8 @@ def main(input_filename):
                     first_twice = frequency
                 elif not frequency_dict.get(frequency):
                     frequency_dict[frequency] = True
-    return frequency, first_twice
+    return first_twice
 
 
 if __name__ == '__main__':
-    import os
-    this_dir = os.path.abspath(os.path.dirname(__file__))
-    input_dir = os.path.join(this_dir, 'inputs')
-    print(main(os.path.join(input_dir, 'one.txt')))
+    print(main('input.txt'))
