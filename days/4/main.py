@@ -63,7 +63,6 @@ def main(input_filename):
     return most_asleep_guard, minute_most_asleep
 
 
-
 def part_two():
     global guards
     most_asleep_guard, minute_most_dozed, occurrences = None, -1, -1
